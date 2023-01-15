@@ -1,5 +1,6 @@
 package leetcode
 
+import java.util.Locale
 import scala.annotation.tailrec
 import scala.language.implicitConversions
 
@@ -28,6 +29,7 @@ object Solution1877 extends App {
    */
   def minPairSumSolution2(nums: Array[Int]): Int = (nums.sorted.reverse zip nums.sorted).map(n => n._1 + n._2).reduce((x, y) => x max y)
 
+  "".toLowerCase(Locale.ENGLISH)
   println(minPairSumSolution2(Array(3, 5, 4, 2, 4, 6)))
 
 }
