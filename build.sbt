@@ -7,6 +7,8 @@ lazy val root = (project in file("."))
     name := "leetcode-hackerrank",
     libraryDependencies ++= Seq(
       "org.scalactic" %% "scalactic" % "3.2.16",
-      "org.scalatest" %% "scalatest" % "3.2.16" % "test"
+      "org.scalatest" %% "scalatest" % "3.2.16" % "test",
+
+      "org.junit.jupiter" % "junit-jupiter-api" % "5.9.3" % Test
     )
   )
