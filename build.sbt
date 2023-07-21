@@ -4,5 +4,9 @@ ThisBuild / scalaVersion := "2.13.10"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "leetcode-hackerrank"
+    name := "leetcode-hackerrank",
+    libraryDependencies ++= Seq(
+      "org.scalactic" %% "scalactic" % "3.2.16",
+      "org.scalatest" %% "scalatest" % "3.2.16" % "test"
+    )
   )

@@ -1,0 +1,5 @@
+package rockthejvm
+
+class AdvancedPatternMatch {
+
+}
