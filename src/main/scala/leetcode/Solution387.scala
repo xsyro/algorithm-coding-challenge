@@ -16,7 +16,7 @@ class Solution387 {
 
     @tailrec
     def uniqRemainTailRec(remainingItems: Seq[Char], currentItem: Char): Int = {
-//      println(currentItem, remainingItems)
+      println(currentItem, remainingItems)
       if (!remainingItems.contains(currentItem))
         return charArr.indexOf(currentItem)
       uniqRemainTailRec(remainingItems.tail, remainingItems.head)
