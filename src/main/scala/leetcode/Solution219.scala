@@ -1,5 +1,5 @@
 package leetcode
 
-class Solution219 {
+object Solution219 extends App {
 
 }

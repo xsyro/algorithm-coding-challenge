@@ -4,7 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class JavaSolution217Test {
@@ -21,19 +21,19 @@ public class JavaSolution217Test {
     @Test
     @DisplayName("Test case for input: 'leetcode'")
     public void testFirstUniqCharTestCase1() {
-        assertEquals(this.solution217.containsDuplicate(new int[]{1,2,3,1}), true);
+        assertTrue(this.solution217.containsDuplicate(new int[]{1, 2, 3, 1}));
     }
 
     @Test
     @DisplayName("Test case for input: 'loveleetcode'")
     public void testFirstUniqCharTestCase2() {
-        assertEquals(this.solution217.containsDuplicate(new int[]{1,2,3,4}), false);
+        assertFalse(this.solution217.containsDuplicate(new int[]{1, 2, 3, 4}));
     }
 
     @Test
     @DisplayName("Test case for input: 'aabb'")
     public void testFirstUniqCharTestCase3() {
-        assertEquals(this.solution217.containsDuplicate(new int[]{1,1,1,3,3,4,3,2,4,2}), true);
+        assertTrue(this.solution217.containsDuplicate(new int[]{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}));
     }
 
 

@@ -1,11 +1,12 @@
 package leetcode
 
+import java.util
 import scala.annotation.tailrec
 
 object Solution217 extends App {
 
   //Works! However, not efficient algorithm for large dat
-  def containsDuplicateComplex(nums: Array[Int]): Boolean = {
+  def containsDuplicateUsingRecursion(nums: Array[Int]): Boolean = {
     @tailrec
     def tailRecCheck(remaining: Array[Int], item: Int, result: Boolean): Boolean = {
       if (remaining.contains(item)) return true
@@ -15,9 +16,8 @@ object Solution217 extends App {
     tailRecCheck(nums.tail, nums.head, result = false)
   }
 
-
   //More efficient solution
-  def containsDuplicate(nums: Array[Int]): Boolean = {
+  def containsDuplicateUsingHashSet(nums: Array[Int]): Boolean = {
     var result = false;
     nums.foldLeft(scala.collection.mutable.Set[Int]()) { (item, n) =>
       if (!item.contains(n)) item.add(n) else {
@@ -28,6 +28,15 @@ object Solution217 extends App {
     result
   }
 
+  //More efficient solution
+  def containsDuplicateUsingSorting(nums: Array[Int]): Boolean = {
+    util.Arrays.sort(nums)
+    for (i <- 0 until nums.length - 1) {
+      if(nums(i) == nums(i+1)) return true
+    }
+    false
+  }
 
-  println(containsDuplicate(Array(1, 2, 3, 1)))
+
+  println(containsDuplicateUsingSorting(Array(1,2,3,4,1)))
 }

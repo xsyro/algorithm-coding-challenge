@@ -1,39 +1,35 @@
 import leetcode.JavaSolution217;
+import leetcode.JavaSolution242;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class JavaSolution217Test {
+public class JavaSolution242Test {
 
 
-    private JavaSolution217 solution217;
+    private JavaSolution242 solution242;
 
     @BeforeAll
     public void init() {
-        this.solution217 = new JavaSolution217();
+        this.solution242 = new JavaSolution242();
     }
 
 
     @Test
-    @DisplayName("Test case for input: 'leetcode'")
+    @DisplayName("Test case for input: 'nagaram' and 'nagaram'")
     public void testFirstUniqCharTestCase1() {
-        assertTrue(this.solution217.containsDuplicate(new int[]{1, 2, 3, 1}));
+        assertTrue(this.solution242.isAnagram("anagram", "nagaram"));
     }
 
     @Test
-    @DisplayName("Test case for input: 'loveleetcode'")
+    @DisplayName("Test case for input: 'rat' and 'car")
     public void testFirstUniqCharTestCase2() {
-        assertFalse(this.solution217.containsDuplicate(new int[]{1, 2, 3, 4}));
-    }
-
-    @Test
-    @DisplayName("Test case for input: 'aabb'")
-    public void testFirstUniqCharTestCase3() {
-        assertTrue(this.solution217.containsDuplicate(new int[]{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}));
+        assertFalse(this.solution242.isAnagram("rat", "car"));
     }
 
 

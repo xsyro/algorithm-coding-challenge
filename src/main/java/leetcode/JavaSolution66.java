@@ -2,9 +2,7 @@ package leetcode;
 
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class JavaSolution66 {
 
@@ -19,10 +17,8 @@ public class JavaSolution66 {
      * @return
      */
     public int[] plusOne(int[] digits) {
-        StringBuffer stringBuffer = new StringBuffer();
-        for (int i = 0; i < digits.length; i++) {
-            stringBuffer.append(digits[i]);
-        }
+        StringBuilder stringBuffer = new StringBuilder();
+        Arrays.stream(digits).forEach(stringBuffer::append);
         BigDecimal digitAdd = new BigDecimal(stringBuffer.toString()).add(new BigDecimal(1));
         String[] splitDigits = digitAdd.toString().split("");
         int[] newDigits = new int[splitDigits.length];

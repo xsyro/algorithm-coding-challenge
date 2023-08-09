@@ -1,5 +1,5 @@
 package rockthejvm
 
-class AdvancedPatternMatch {
+object AdvancedPatternMatch extends App {
 
 }
