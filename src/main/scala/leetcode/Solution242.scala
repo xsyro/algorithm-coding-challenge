@@ -14,7 +14,7 @@ class Solution242 {
    * @return
    */
   def isAnagram(s: String, t: String): Boolean = {
-    val sArr = s.toCharArray.toSeq.sorted
+    val sArr = s.toCharArray.sorted
     if (s.length != t.length) return false
     val mapOfSStr = sArr.foldLeft(scala.collection.mutable.Map.empty[Char, Int])((map, item) => map += (item -> s.count(_ == item))).toMap
     val unmatchedChar = mapOfSStr.dropWhile(tuple2 => {
