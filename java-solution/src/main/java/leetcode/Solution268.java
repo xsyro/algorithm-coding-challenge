@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JavaSolution268 {
+public class Solution268 {
 
     public int missingNumber(int[] nums) {
         List<Integer> numsToList = new ArrayList<>(nums.length);

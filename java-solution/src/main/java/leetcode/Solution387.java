@@ -1,6 +1,6 @@
 package leetcode;
 
-public class JavaSolution387 {
+public class Solution387 {
 
     /**
      * Given a string of @str, find the first non-repeating character in it and return its index.

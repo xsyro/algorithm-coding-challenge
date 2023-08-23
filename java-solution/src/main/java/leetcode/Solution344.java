@@ -1,6 +1,6 @@
 package leetcode;
 
-public class JavaSolution344 {
+public class Solution344 {
 
     /**
      * Write a function that reverses a string. The input string is given as an array of characters s.

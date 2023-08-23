@@ -1,9 +1,8 @@
 package leetcode;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
-public class JavaSolution169 {
+public class Solution169 {
 
     /**
      * Given an array nums of size n, return the majority element.

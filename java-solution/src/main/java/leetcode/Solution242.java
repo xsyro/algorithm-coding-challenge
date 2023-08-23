@@ -1,11 +1,7 @@
 package leetcode;
 
-import scala.Char;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class JavaSolution242 {
+public class Solution242 {
 
     /**
      * Given two strings s and t, return true if t is an anagram of s, and false otherwise.

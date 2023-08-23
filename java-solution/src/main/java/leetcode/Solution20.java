@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class JavaSolution20 {
+public class Solution20 {
 
     /**
      * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.

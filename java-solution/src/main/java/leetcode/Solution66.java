@@ -4,7 +4,7 @@ package leetcode;
 import java.math.BigDecimal;
 import java.util.Arrays;
 
-public class JavaSolution66 {
+public class Solution66 {
 
     /**
      * You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer.

@@ -1,7 +1,6 @@
-package others;
+package geeksforgeeks;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * Reference

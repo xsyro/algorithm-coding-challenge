@@ -1,6 +1,6 @@
 package leetcode;
 
-public class JavaSolution142 {
+public class Solution142 {
 
     public boolean isPalindrome(String s) {
         boolean isValidPalindrome = true;
