@@ -2,7 +2,6 @@ package leetcode;
 
 
 public class Solution242 {
-
     /**
      * Given two strings s and t, return true if t is an anagram of s, and false otherwise.
      *
@@ -26,5 +25,4 @@ public class Solution242 {
         System.out.printf("%s %s", s, String.valueOf(tComposedChars));
         return s.equals(String.valueOf(tComposedChars));
     }
-
 }
