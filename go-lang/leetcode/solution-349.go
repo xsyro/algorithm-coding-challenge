@@ -2,6 +2,7 @@ package leetcode
 
 import "slices"
 
+//https://leetcode.com/problems/move-zeroes
 func intersection(nums1 []int, nums2 []int) []int {
 	var numSet1, numSet2, intersection []int
 	for _, item := range nums1 {
